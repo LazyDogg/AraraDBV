@@ -33,7 +33,7 @@
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/yourusername/AraraDBV.git
+   git clone https://github.com/LazyDogg/AraraDBV.git
    cd AraraDBV
    ```
 

@@ -11,6 +11,12 @@ import { appWindow } from "@tauri-apps/api/window";
 export class TitlebarComponent {
 	maximized = true;
 
+	constructor() {
+		appWindow.isMaximized().then((maximized) => {
+			this.maximized = maximized;
+		});
+	}
+
 	minimize(): void {
 		appWindow.minimize();
 	}

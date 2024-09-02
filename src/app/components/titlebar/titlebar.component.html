@@ -1,0 +1,23 @@
+<div data-tauri-drag-region class="flex items-center justify-between h-9 bg-neutral-900">
+    <div class="flex items-center">
+        <img data-tauri-drag-region src="../../../assets/tauri.svg" alt="icon" class="w-auto h-5 px-2" />
+    </div>
+
+    <div class="flex items-center">
+        <button class="flex items-center justify-center w-12 h-9  hover:bg-neutral-700 " (click)="minimize()">
+            <span class="material-symbols-outlined text-white">
+                remove
+            </span>
+        </button>
+        <button class="flex items-center justify-center w-12 h-9 hover:bg-neutral-700 " (click)="maximize()">
+            <span class="material-symbols-outlined text-white">
+                {{maximized ? 'collapse_content' : 'expand_content'}}
+            </span>
+        </button>
+        <button class="flex items-center justify-center w-12 h-9 hover:bg-red-600 " (click)="close()">
+            <span class="material-symbols-outlined text-white">
+                close
+            </span>
+        </button>
+    </div>
+</div>
